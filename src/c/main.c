@@ -11,7 +11,7 @@ static char s_text_buf[48];
 
 static void update_time(struct tm *t) {
   char raw[48];
-  strftime(raw, sizeof(raw), "%A, %B %d, %Y, %I:%M %p", t);
+  strftime(raw, sizeof(raw), "%A, %B %d, %Y, %I/%M %p", t);
   // uppercase
   for (int i = 0; raw[i]; i++) {
     if (raw[i] >= 'a' && raw[i] <= 'z') raw[i] -= 32;
