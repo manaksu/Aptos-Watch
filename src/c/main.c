@@ -7,7 +7,7 @@ static TextLayer *s_symbol_layer;
 static GFont s_font_main;
 static GFont s_font_bold_48;
 
-static char s_text_buf[48];
+static char s_text_buf[56];
 
 static void update_time(struct tm *t) {
   char raw[48];
@@ -16,7 +16,8 @@ static void update_time(struct tm *t) {
   for (int i = 0; raw[i]; i++) {
     if (raw[i] >= 'a' && raw[i] <= 'z') raw[i] -= 32;
   }
-  snprintf(s_text_buf, sizeof(s_text_buf), "%s", raw);
+  BatteryChargeState bat = battery_state_service_peek();
+  snprintf(s_text_buf, sizeof(s_text_buf), "%s ~%d%%", raw, (int)bat.charge_percent);
   text_layer_set_text(s_text_layer, s_text_buf);
 }
 
