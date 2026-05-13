@@ -23,7 +23,7 @@
         },
         {
           "type": "font",
-          "name": "APTOS_MAIN_18",
+          "name": "APTOS_MAIN_14",
           "file": "fonts/Aptos-Display-Bold.ttf",
           "characterRegex": "[A-Z0-9,.: ]",
           "trackingAdjust": 0,
