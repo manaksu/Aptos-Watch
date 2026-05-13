@@ -23,17 +23,9 @@
         },
         {
           "type": "font",
-          "name": "APTOS_DATE_18",
+          "name": "APTOS_MAIN_18",
           "file": "fonts/Aptos-Display-Bold.ttf",
-          "characterRegex": "[A-Z0-9,. ]",
-          "trackingAdjust": 0,
-          "compatibility": "2.7"
-        },
-        {
-          "type": "font",
-          "name": "APTOS_TIME_28",
-          "file": "fonts/Aptos-Display.ttf",
-          "characterRegex": "[MPA0-9: ]",
+          "characterRegex": "[A-Z0-9,.: ]",
           "trackingAdjust": 0,
           "compatibility": "2.7"
         }
