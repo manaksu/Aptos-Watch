@@ -23,17 +23,17 @@
         },
         {
           "type": "font",
-          "name": "APTOS_36",
-          "file": "fonts/Aptos-Display.ttf",
-          "characterRegex": "[0-9:]",
+          "name": "APTOS_DATE",
+          "file": "fonts/Aptos-Display-Bold.ttf",
+          "characterRegex": "[A-Z0-9,. ]",
           "trackingAdjust": 0,
           "compatibility": "2.7"
         },
         {
           "type": "font",
-          "name": "APTOS_22",
+          "name": "APTOS_TIME",
           "file": "fonts/Aptos-Display.ttf",
-          "characterRegex": "[A-Za-z0-9 ,.]",
+          "characterRegex": "[A-Z0-9:/ ]",
           "trackingAdjust": 0,
           "compatibility": "2.7"
         }
