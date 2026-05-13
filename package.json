@@ -33,7 +33,7 @@
           "type": "font",
           "name": "APTOS_TIME",
           "file": "fonts/Aptos-Display.ttf",
-          "characterRegex": "[A-Z0-9:/ ]",
+          "characterRegex": "[ITSMPA0-9:/ ]",
           "trackingAdjust": 0,
           "compatibility": "2.7"
         }
