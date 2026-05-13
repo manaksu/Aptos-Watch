@@ -31,7 +31,7 @@ static void window_load(Window *window) {
   window_set_background_color(window, GColorBlack);
 
   s_font_main = fonts_load_custom_font(
-      resource_get_handle(RESOURCE_ID_APTOS_MAIN_18));
+      resource_get_handle(RESOURCE_ID_APTOS_MAIN_14));
   s_font_bold_48 = fonts_load_custom_font(
       resource_get_handle(RESOURCE_ID_APTOS_BOLD_48));
 
