@@ -1,0 +1,43 @@
+{
+  "name": "aptos-watch",
+  "author": "manaksu",
+  "version": "1.0",
+  "keywords": [],
+  "pebble": {
+    "displayName": "Aptos Watch",
+    "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "sdkVersion": "3",
+    "targetPlatforms": ["basalt"],
+    "watchapp": {
+      "watchface": true
+    },
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "APTOS_BOLD_48",
+          "file": "fonts/Aptos-Display-Bold.ttf",
+          "characterRegex": "[<]",
+          "trackingAdjust": 0,
+          "compatibility": "2.7"
+        },
+        {
+          "type": "font",
+          "name": "APTOS_36",
+          "file": "fonts/Aptos-Display.ttf",
+          "characterRegex": "[0-9:]",
+          "trackingAdjust": 0,
+          "compatibility": "2.7"
+        },
+        {
+          "type": "font",
+          "name": "APTOS_22",
+          "file": "fonts/Aptos-Display.ttf",
+          "characterRegex": "[A-Za-z0-9 ,.]",
+          "trackingAdjust": 0,
+          "compatibility": "2.7"
+        }
+      ]
+    }
+  }
+}
