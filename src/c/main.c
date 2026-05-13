@@ -29,8 +29,8 @@ static void update_time(struct tm *t) {
 
   // Time: "IT IS : HH/MM/SS AM"
   char hms[12];
-  strftime(hms, sizeof(hms), "%I/%M/%S %p", t);
-  snprintf(s_time_buf, sizeof(s_time_buf), "IT IS : %s", hms);
+  strftime(hms, sizeof(hms), "%I:%M %p", t);
+  snprintf(s_time_buf, sizeof(s_time_buf), "%s", hms);
   text_layer_set_text(s_time_layer, s_time_buf);
 }
 
@@ -48,9 +48,9 @@ static void window_load(Window *window) {
   s_font_bold_48 = fonts_load_custom_font(
       resource_get_handle(RESOURCE_ID_APTOS_BOLD_48));
   s_font_date = fonts_load_custom_font(
-      resource_get_handle(RESOURCE_ID_APTOS_DATE));
+      resource_get_handle(RESOURCE_ID_APTOS_DATE_18));
   s_font_time = fonts_load_custom_font(
-      resource_get_handle(RESOURCE_ID_APTOS_TIME));
+      resource_get_handle(RESOURCE_ID_APTOS_TIME_28));
 
   // -- Date: top-left, wraps full width, 2 lines at ~18pt
   s_date_layer = text_layer_create(GRect(0, 2, bounds.size.w, 52));
@@ -107,7 +107,7 @@ static void init(void) {
     .unload = window_unload,
   });
   window_stack_push(s_window, true);
-  tick_timer_service_subscribe(SECOND_UNIT, tick_handler);
+  tick_timer_service_subscribe(MINUTE_UNIT, tick_handler);
 }
 
 static void deinit(void) {
