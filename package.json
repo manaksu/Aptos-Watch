@@ -1,7 +1,7 @@
 {
   "name": "aptos-watch",
   "author": "manaksu",
-  "version": "1.0",
+  "version": "1.0.0",
   "keywords": [],
   "pebble": {
     "displayName": "Aptos Watch",
