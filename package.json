@@ -1,11 +1,11 @@
 {
   "name": "aptos-watch",
   "author": "manaksu",
-  "version": "1.0.50",
+  "version": "1.0.60",
   "keywords": [],
   "pebble": {
     "displayName": "Aptos Watch",
-    "uuid": "edee2750-1bff-4da4-852c-1f81a779084e",
+    "uuid": "aedee2750-1bff-4da4-852c-1f81a779084e",
     "sdkVersion": "3",
     "targetPlatforms": [
       "basalt"
@@ -42,7 +42,7 @@
         },
         {
           "type": "font",
-          "name": "APTOS_MONO_14",
+          "name": "APTOS_MONO_16",
           "file": "fonts/Aptos-Mono.ttf",
           "characterRegex": "[A-Za-z0-9,.:/~% ]",
           "trackingAdjust": 0,
