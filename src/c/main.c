@@ -171,7 +171,7 @@ static void window_load(Window *window) {
   s_font_main = fonts_load_custom_font(
       resource_get_handle(RESOURCE_ID_APTOS_MAIN_14));
   s_font_thin = fonts_load_custom_font(
-      resource_get_handle(RESOURCE_ID_APTOS_MONO_16));
+      resource_get_handle(RESOURCE_ID_APTOS_MONO_14));
   s_font_bold_48 = fonts_load_custom_font(
       resource_get_handle(RESOURCE_ID_APTOS_BOLD_48));
 
