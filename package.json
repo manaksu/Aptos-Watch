@@ -8,8 +8,13 @@
     "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
     "sdkVersion": "3",
     "targetPlatforms": ["basalt"],
+    "capabilities": ["configurable"],
     "watchapp": {
       "watchface": true
+    },
+    "appKeys": {
+      "KEY_BG":   0,
+      "KEY_CASE": 1
     },
     "resources": {
       "media": [
@@ -25,7 +30,7 @@
           "type": "font",
           "name": "APTOS_MAIN_14",
           "file": "fonts/Aptos-Display-Bold.ttf",
-          "characterRegex": "[A-Z0-9,.:/~% ]",
+          "characterRegex": "[A-Za-z0-9,.:/~% ]",
           "trackingAdjust": 0,
           "compatibility": "2.7"
         }
